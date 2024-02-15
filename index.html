@@ -29,6 +29,47 @@
             <a href="#contact">Contact</a>
         </div>
     </nav>
-    
+    <section id="home">
+        <div class="welcome">
+            <p>Hi, my name is</p>
+            <h3>Bernice Uwituze</h3>
+            <p>A software developer</p>
+        </div>
+    </section>
+    <section id="about">
+        <p>Currently, a student at the African Leadership University,
+            pursuing a Bachelor's degree in software engineering
+        </p>
+    </section>
+    <section id="projects">
+        <p>Checkout my Projects</p>
+    </section>
+    <section id="contact">
+        <h3>Get in Touch With Me</h3>
+        <div class="contact-form">
+            <form action="">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="message">Your message</label>
+                <textarea name="message" id="message" cols="10" rows="10"></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+        const menu = document.querySelector('.menu');
+
+        menuIcon.addEventListener('click', () => {
+            menu.style.display = 'flex'
+        })
+    </script>
 </body>
 </html>
