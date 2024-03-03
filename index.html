@@ -3,92 +3,228 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <title>Web Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <header>
-        <h1>Bernice</h1>
-    </header>
-
+    <!--desktop navbar-->
     <div class="container">
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+        <header>
+            <h1>BERNICE</h1>
+        </header>
+        <nav class="desktop-nav">
+            <ul>
+                <li><a class="link" href="#home">Home</a></li>
+                <li><a class="link" href="#about">About</a></li>
+                <li><a class="link" href="#projects">Projects</a></li>
+                <li><a class="link" href="#contact">Contact</a></li>
+                <li><a href="login.html" class="button">Log In</a></li>
             </ul>
-            <div class="menu-icon">
-                &#9776;
-            </div>
-            <div class="menu">
+        </nav>
+    </div>
+
+    <!--hamburger menu for smaller screens-->
+    <div id="hamburger-menu">
+        <div class="header">
+            <h1>BERNICE</h1>
+            <button class="hamburger-btn">☰</button>
+        </div>
+        
+        <nav class="hamburger-nav">
+            
+            
+            <div class="nav-links">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
+                <a href="login.html">Log In</a>
             </div>
         </nav>
     </div>
+    <main>
+        <!--homepage-->
+        <section id="home">
+            <div class="home-container">
+                <div class="profile">
+                    <img src="images/profile.png" alt="website owner picture">
+                </div>
+                <div class="description">
+                    <h1>Welcome To My Personal Website</h1>
+                    <p>Hello, welcome to my online portfolio.
+                    My name is Bernice Uwituze,  I’m 
+                    a developer/student based in Kigali, Rwanda. <br>
+                    Here you’ll find information about my skills, 
+                    experience, projects I have worked on, and blogs.</p>
+                <button class="button"><a href="blogs.html">Read My Blogs</a></button>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="about-container">
+                <h1 class="title first">Get To Know More</h1>
+                <h1 class="title">About Me</h1>
+                <p class="about-description">I am currently a student specializing in Software Engineering. 
+                    My interest in web development began with a curiosity about how websites 
+                    are built and since then, I have learned about different web technologies that are used in the tech industry.
+                    Over the next few years, I am excited to contribute to open-source Projects,
+                    master new technologies, and create engaging and user-friendly web experiences.</p>
+
+                <h1 class="title">My Skills</h1>
+                <div class="skills">
+                    <div class="skill">
+                        <h3>HTML & CSS</h3>
+                        <p>Experienced</p>
+                    </div>
     
-    <section id="home">
-        <div class="welcome">
-            <div class="profile">
-                <img src="images/profile.jpg" alt="profile picture">
+                    <div class="skill">
+                        <h3>JavaScript & TypeScript</h3>
+                        <p>Intermediate</p>
+                    </div>
+    
+                    <div class="skill">
+                        <h3>Python</h3>
+                        <p>Intermediate</p>
+                    </div>
+    
+                    <div class="skill">
+                        <h3>Git & GitHub Collaboration</h3>
+                        <p>Experienced</p>
+                    </div>
+                </div>
+                
+                <div class="cv-button">
+                    <button class="button" onclick="window.open('./assets/Bernice-Uwituze-CV.pdf')">Checkout my CV</button>
+                </div>
+                
             </div>
-            <p>Hi, it's</p>
-            <h3>Bernice Uwituze</h3>
-            <p>and I'm a software developer</p>
-            <h2>Welcome to my web Portfolio</h2>
+            
+        </section>
 
-        </div>
-    </section>
-    <section id="about">
-        <p>Currently, a student at the African Leadership University,
-            pursuing a Bachelor's degree in software engineering.
-        </p>
+        <!--projects section-->
+        <section id="projects">
+            <h1 class="title">Projects</h1>
+            <div class="projects">
+                
+                <div class="project-container">
+                    <div class="img-container">
+                        <img src="images/url-shortener.JPG" alt="project image">
+                    </div>
+                    <h3 class="project-title"> URL Shortener</h3>
+                    <div class="project-buttons">
+                        <button class="button" onclick="location.href='https://berniceu.github.io/weather-app/'">Demo</button>
+                        <button class="button" onclick="location.href='https://github.com/berniceu/weather-app.git'">GitHub</button>
+                    </div>
+                </div>
 
-        <div class="experience">
-            <p>I have experience using html, css, javascript, bootstrap, mysql and python</p>
-        </div>
-    </section>
-    <section id="projects">
-        <div class="block-trainer">
-            <img src="images/delani1.png" alt="Image" class="img-fluid">
-            <div class="block-trainer-overlay">
-              <h2>Delani studios</h2>
-              <p class="text-white">A Website of Delani Studios</p>
-             <button class="btn btn-link"><a href="https://evelyne250.github.io/DelaniStudio/">View More</a></button>
+                <div class="project-container">
+                    <div class="img-container">
+                        <img src="images/weather.png" alt="project image">
+                    </div>
+                    <h3 class="project-title">Weather App</h3>
+                    <div class="project-buttons">
+                        <button class="button" onclick="location.href='https://berniceu.github.io/weather-app/'">Demo</button>
+                        <button class="button" onclick="location.href='https://github.com/berniceu/weather-app.git'">GitHub</button>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                    <div class="img-container">
+                        <img src="images/slack.jpg" alt="project image">
+                    </div>
+                    <h3 class="project-title">Slack Clone</h3>
+                    <div class="project-buttons">
+                        <button class="button" onclick="location.href='https://berniceu.github.io/weather-app/'">Demo</button>
+                        <button class="button" onclick="location.href='https://github.com/berniceu/weather-app.git'">GitHub</button>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                    <div class="img-container">
+                        <img src="images/portfolio.png" alt="project image">
+                    </div>
+                    <h3 class="project-title">Portfolio</h3>
+                    <div class="project-buttons">
+                        <button class="button" onclick="location.href='https://berniceu.github.io/weather-app/'">Demo</button>
+                        <button class="button" onclick="location.href='https://github.com/berniceu/weather-app.git'">GitHub</button>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <!--contact section-->
+        <section id="contact">
+            <div class="contact-section">
+                <h1 class="title first">Get In Touch</h1>
+                <h1 class="title">With Me</h1>
+
+                <form action="" class="contact-form">
+                    <input type="text" placeholder="Name" name="username">
+                    <input type="email" placeholder="Email" name="useremail">
+                    <textarea name="query" id="" cols="30" rows="10" placeholder="Enter Your Query..."></textarea>
+                </form>
+                <div class="contact-button">
+                    <button class="button">Submit</button>
+                </div>
+                
+            </div>
+        </section>
         
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+    
             </div>
-    </section>
-    <section id="contact">
-        <h3>Get in Touch With Me</h3>
-        <div class="contact-form">
-            <form action="">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name">
-
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email">
-
-                <label for="message">Your message</label>
-                <textarea name="message" id="message" cols="10" rows="10"></textarea>
-
-                <button type="submit">Send Message</button>
-            </form>
+            <div class="subscribe">
+                <h6>Get the freshest articles right in your inbox</h6>
+                <form action="">
+                    <input type="email" placeholder="Email">
+                    <button>Subscribe</button>
+                </form>
+    
+                <h6>Connect With Me</h6>
+                <div class="socials">
+                    <div class="icon">
+                        
+                        <a href="https://linkedin.com/in/bernice-uwituze" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <div class="icon">
+                        
+                        <a href="https://github.com/berniceu" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <div class="icon">
+                        
+                        <a href="mailto:berniceuwituze@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                    
+                </div>
+            </div>
         </div>
-    </section>
+        
+        <p>© Bernice 2024</p>
+        
+    </footer>
+    <script src="main.js">
 
-
-    <script>
-        const menuIcon = document.querySelector('.menu-icon');
-        const menu = document.querySelector('.menu');
-
-        menuIcon.addEventListener('click', () => {
-            menu.style.display = 'flex'
-        })
     </script>
+    <script src="https://kit.fontawesome.com/53de108cc6.js" crossorigin="anonymous"></script>
 </body>
 </html>
